@@ -30,6 +30,7 @@ public final class QueryUtils {
 
     public static ArrayList<Earthquake> fetchEarthquakeData(String urlString) {
 
+        Log.e(LOG_TAG, "fetchEarthquakeData");
         String jsonResponse = "";
 
         if(TextUtils.isEmpty(urlString)) return null;
